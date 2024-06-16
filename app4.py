@@ -16,6 +16,7 @@ dfDatos = pd.read_csv('datosTienda.csv')
 
 # Declaramos los parámetros en la barra lateral
 with st.sidebar:
+    st.sidebar.text('Desarrollado por: FRANK GUIDO MARINE GONZALES')
     # Filtro de años
     parAno = st.selectbox('Año', options=dfDatos['anio'].unique(), index=0)
     # Filtro de Mes    
